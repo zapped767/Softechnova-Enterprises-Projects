@@ -1,0 +1,33 @@
+.category-carousel {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.category-carousel h2 {
+  font-size: 32px;
+  color: #1d1b52;
+  margin-bottom: 30px;
+}
+
+.category-card {
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+}
+
+.category-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.category-card p {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
