@@ -1,12 +1,14 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-import Header from './Components/Header';
+import Head from './Components/Header';
 import Navbar from './Components/Navbar';
 import HeroSection from './Components/HeroSection';
 import CategoryCarousel from './Components/CategoryCarousel';
+import Home from './pages/Home';
 
-function Home() {
+
+function Header() {
   return ;
 }
 
@@ -15,7 +17,8 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/"element={<Home/>}/>
+        <Route path="/Header" element={<Head />} />
         <Route path="/Nav"element={<Navbar/>}/>
         <Route path="/Hero"element={<HeroSection/>}/>
         <Route path="/Category"element={<CategoryCarousel/>}/>

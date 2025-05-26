@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 const categories = [
-  { name: 'Web Development', image: 'https://source.unsplash.com/300x200/?web' },
+  { name: 'Web Development', image: 'https://th.bing.com/th/id/OIP.KT1BqvV51IZ1tu-sbBsFBgHaEo?rs=1&pid=ImgDetMain' },
   { name: 'Data Science', image: 'https://source.unsplash.com/300x200/?data' },
   { name: 'Graphic Design', image: 'https://source.unsplash.com/300x200/?design' },
   { name: 'Marketing', image: 'https://source.unsplash.com/300x200/?marketing' },
