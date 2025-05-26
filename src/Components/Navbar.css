@@ -1,4 +1,4 @@
-/* Navbar.css */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -112,12 +112,12 @@
   background: linear-gradient(135deg, #3b82f6, #2563eb);
 }
 
-/* Underline animation for active link */
+
 .navbar-links li a.active::before {
   width: 100%;
 }
 
-/* Responsive design */
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -150,7 +150,7 @@
   }
 }
 
-/* Floating animation for navbar */
+
 @keyframes float {
   0% {
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.1);
