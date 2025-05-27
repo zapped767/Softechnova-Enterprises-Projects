@@ -1,5 +1,6 @@
 import React from 'react';
 import './HeroSection.css';
+import heroImage from '../assets/hero-image.jpg'; // ✅ Import your local image
 
 function HeroSection() {
   return (
@@ -13,7 +14,7 @@ function HeroSection() {
         </div>
       </div>
       <div className="hero-image">
-        <img src="https://images.unsplash.com/photo-1584697964154-aca1737a3cb2" alt="Online learning" />
+        <img src={heroImage} alt="Online learning" />
       </div>
     </div>
   );

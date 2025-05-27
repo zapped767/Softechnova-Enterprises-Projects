@@ -4,13 +4,21 @@ import './CategoryCarousel.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+// Importing local images from assets
+import webDev from '../assets/web-dev.jpg';
+import dataScience from '../assets/data-science.jpg';
+import graphicDesign from '../assets/graphic-design.jpg';
+import marketing from '../assets/marketing.jpg';
+import cybersecurity from '../assets/cybersecurity.jpg';
+import aiMl from '../assets/ai-ml.jpg';
+
 const categories = [
-  { name: 'Web Development', image: 'https://th.bing.com/th/id/OIP.KT1BqvV51IZ1tu-sbBsFBgHaEo?rs=1&pid=ImgDetMain' },
-  { name: 'Data Science', image: 'https://source.unsplash.com/300x200/?data' },
-  { name: 'Graphic Design', image: 'https://source.unsplash.com/300x200/?design' },
-  { name: 'Marketing', image: 'https://source.unsplash.com/300x200/?marketing' },
-  { name: 'Cybersecurity', image: 'https://source.unsplash.com/300x200/?cybersecurity' },
-  { name: 'AI & ML', image: 'https://source.unsplash.com/300x200/?ai' },
+  { name: 'Web Development', image: webDev },
+  { name: 'Data Science', image: dataScience },
+  { name: 'Graphic Design', image: graphicDesign },
+  { name: 'Marketing', image: marketing },
+  { name: 'Cybersecurity', image: cybersecurity },
+  { name: 'AI & ML', image: aiMl },
 ];
 
 function CategoryCarousel() {
