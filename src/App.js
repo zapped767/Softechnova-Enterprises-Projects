@@ -8,8 +8,9 @@ import CategoryCarousel from './Components/CategoryCarousel';
 import Home from './pages/Home';
 import Course from './pages/Course';
 import About from './pages/About';
-import Login from './Components/Login';
-import Signup from './Components/Sigup';
+import Contact from './pages/Contact';
+import AuthPage from './Components/AuthPage';
+import CourseDetailPage from './pages/CourseDetailPage';
 
 
 function Header() {
@@ -21,15 +22,17 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/"element={<Home/>}/>
+        <Route path="/Ho"element={<Home/>}/>
         <Route path="/Header" element={<Head />} />
         <Route path="/Nav"element={<Navbar/>}/>
         <Route path="/Hero"element={<HeroSection/>}/>
         <Route path="/Category"element={<CategoryCarousel/>}/>
         <Route path="/Course"element={<Course/>}/>  
         <Route path="/About"element={<About/>}/>    
-        <Route path="/"element={<Login/>}/>  
-        <Route path="Signup"element={<Signup/>}/>
+        <Route path="/Contact"element={<Contact/>}/>
+        <Route path="/"element={<AuthPage/>}/>
+        <Route path="/Cour-Deat"element={<CourseDetailPage/>}/>
+
       </Routes>
     </div>
   );
