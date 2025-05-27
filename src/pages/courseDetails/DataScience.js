@@ -1,0 +1,73 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import './CourseDetail.css';
+
+function DataScience() {
+  const modules = [
+    { title: "Python for Data Science", duration: "4 hours" },
+    { title: "Data Wrangling & Cleaning", duration: "5 hours" },
+    { title: "Exploratory Data Analysis (EDA)", duration: "4 hours" },
+    { title: "Data Visualization with Matplotlib & Seaborn", duration: "5 hours" },
+    { title: "Predictive Modeling & Regression", duration: "6 hours" },
+    { title: "Final Data Science Project", duration: "8 hours" }
+  ];
+
+  return (
+    <div className="course-detail data-science">
+      <div className="bg-elements">
+        <div className="bg-circle circle-1"></div>
+        <div className="bg-circle circle-2"></div>
+      </div>
+
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="content-container"
+      >
+        <motion.h2
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2 }}
+          className="course-title"
+        >
+          Data Science Bootcamp
+        </motion.h2>
+
+        <motion.div 
+          className="modules-container"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3 }}
+        >
+          {modules.map((mod, idx) => (
+            <motion.div
+              key={idx}
+              className="module-card"
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.3 + idx * 0.1 }}
+              whileHover={{ scale: 1.02, boxShadow: "0 10px 20px rgba(0,0,0,0.1)" }}
+            >
+              <div className="module-header">
+                <span className="module-number">Module {idx + 1}</span>
+                <span className="module-duration">{mod.duration}</span>
+              </div>
+              <p className="module-title">{mod.title}</p>
+              <div className="progress-bar">
+                <motion.div 
+                  className="progress-fill"
+                  initial={{ width: 0 }}
+                  animate={{ width: `${Math.random() * 30 + 70}%` }}
+                  transition={{ delay: idx * 0.1 + 0.5, duration: 1 }}
+                />
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+      </motion.div>
+    </div>
+  );
+}
+
+export default DataScience;

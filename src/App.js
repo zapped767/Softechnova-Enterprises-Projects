@@ -10,7 +10,14 @@ import Course from './pages/Course';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import AuthPage from './Components/AuthPage';
-import CourseDetailPage from './pages/CourseDetailPage';
+
+import AiMl from './pages/courseDetails/AiMl';
+import Cybersecurity from './pages/courseDetails/Cybersecurity';
+import DataScience from './pages/courseDetails/DataScience';
+import GraphicDesign from './pages/courseDetails/GraphicDesign';
+import Marketing from './pages/courseDetails/Marketing';
+import WebDevelopment from './pages/courseDetails/WebDevelopment';
+
 
 
 function Header() {
@@ -31,7 +38,14 @@ function App() {
         <Route path="/About"element={<About/>}/>    
         <Route path="/Contact"element={<Contact/>}/>
         <Route path="/"element={<AuthPage/>}/>
-        <Route path="/Cour-Deat"element={<CourseDetailPage/>}/>
+        <Route path="/Course/ai-&-ml"element={<AiMl/>}/>
+        <Route path="/Course/cybersecurity"element={<Cybersecurity/>}/>
+        <Route path="/Course/data-science"element={<DataScience/>}/>
+        <Route path="/Course/graphic-design"element={<GraphicDesign/>}/>
+        <Route path="/Course/marketing"element={<Marketing/>}/>
+        <Route path="/Course/web-development"element={<WebDevelopment/>}/>
+
+        
 
       </Routes>
     </div>

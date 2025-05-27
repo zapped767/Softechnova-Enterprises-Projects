@@ -1,6 +1,6 @@
 import React from 'react';
 import './HeroSection.css';
-import heroImage from '../assets/hero-image.jpg'; // ✅ Import your local image
+import heroImage from '../assets/hero-image.jpg'; 
 
 function HeroSection() {
   return (
